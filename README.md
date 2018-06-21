@@ -7,8 +7,9 @@ git fetch https://github.com/leelin0922/kernel-source.git
 git checkout -b SBC-7112S_Linux_Kernel-v4.9.11    
 git push SBC-7112S_Linux_Kernel-v4.9.11 SBC-7112S_Linux_Kernel-v4.9.11    
 
-Examples:copy git commit git clone https://github.com/leelin0922/u-boot.git -b SBC-7112S_Linux_Uboot-v2017.03   
+Examples:copy git commit    
 
+git clone https://github.com/leelin0922/kernel-source.git -b SBC-7112S_Linux_Kernel-v4.9.11   
 git status    
 git add .   
-git commit    
+git commit -m "For SBC7112"
