@@ -164,9 +164,9 @@
 	pinctrl-0 = <&pinctrl_i2c1>;
 	status = "okay";
 
-    eeprom@51 {
+    eeprom@50 {
         compatible = "at24,24c02";
-        reg = <0x51>;
+        reg = <0x50>;
     };
 	mag3110@0e {
 		compatible = "fsl,mag3110";
@@ -375,7 +375,7 @@
 			native-mode = <&timing0>;
 
 			timing0: timing0 {
-				clock-frequency = <15000000>;
+				clock-frequency = <9200000>;
 				hactive = <480>;
 				vactive = <272>;
 				hfront-porch = <2>;
