@@ -78,7 +78,7 @@ enum tpm2_const {
 	TPM2_TIMEOUT_D		= 30,
 	TPM2_DURATION_SHORT	= 20,
 	TPM2_DURATION_MEDIUM	= 750,
-	TPM2_DURATION_LONG	= 2000,
+	TPM2_DURATION_LONG	= 30000,
 };
 
 enum tpm2_structures {

@@ -35,6 +35,7 @@
 		status = "okay";
 	};
 #endif
+#if 0
 	hannstar_cabc {
 		compatible = "hannstar,cabc";
 		lvds0 {
@@ -46,7 +47,7 @@
 			cabc-enable;	//active
 		};
 	};
-
+#endif
 	chosen {
 		stdout-path = &uart1;
 	};
@@ -274,6 +275,7 @@
 		compatible = "pwm-backlight";
 		pwms = <&pwm1 0 5000000>;	//default pwm1
 		//reg = <0x0>;
+		enable-gpios = <&gpio6 15 GPIO_ACTIVE_HIGH>;
 		brightness-levels = <
 			0 /*1   2   3   4   5   6   7   8   9
 			10  11  12  13  14  15  16  17  18  19*/
@@ -308,6 +310,7 @@
 		compatible = "pwm-backlight";
 		pwms = <&pwm2 0 5000000>;	//default pwm1
 		//reg = <0x0>;
+		enable-gpios = <&gpio6 16 GPIO_ACTIVE_HIGH>;
 		brightness-levels = <
 			0 /*1   2   3   4   5   6   7   8   9
 			10  11  12  13  14  15  16  17  18  19*/

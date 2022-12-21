@@ -237,9 +237,9 @@ static void __init imx6q_enet_phy_init(void)
 		phy_register_fixup_for_uid(PHY_ID_AR8035, 0xffffffef,
 				ar8035_phy_fixup);
 		phy_register_fixup_for_uid(PHY_ID_RTL8211E, REALTEK_PHY_ID_MASK,
-                                rtl8211e_phy_fixup);
-                phy_register_fixup_for_uid(PHY_ID_RTL8211F, REALTEK_PHY_ID_MASK,
-                                rtl8211f_phy_fixup);
+                rtl8211e_phy_fixup);
+        phy_register_fixup_for_uid(PHY_ID_RTL8211F, REALTEK_PHY_ID_MASK,
+                rtl8211f_phy_fixup);
 	}
 }
 
